@@ -105,6 +105,9 @@ GEM
       sprockets-rails (>= 2.0.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
+    rails-dev-tweaks (1.2.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
     rails-dom-testing (1.0.7)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
@@ -167,6 +170,7 @@ DEPENDENCIES
   mysql2 (>= 0.3.18, < 0.5)
   puma
   rails (>= 5.0.0.beta2, < 5.1)
+  rails-dev-tweaks (~> 1.1)
   redis (~> 3.0)
   sass-rails (~> 5.0)
   turbolinks

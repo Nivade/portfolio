@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad3924ea-ca1c-4afd-adfe-cb4afab7291c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/maps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/freelancer.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/freelancer.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-a2da317b54fd02cfc9a3da6eba2becb4.json" afterPath="$PROJECT_DIR$/public/assets/.sprockets-manifest-a2da317b54fd02cfc9a3da6eba2becb4.json" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,18 +63,18 @@
       <file leaf-file-name="home.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.73077">
+            <state vertical-scroll-proportion="65.15385">
               <caret line="135" column="138" selection-start-line="135" selection-start-column="138" selection-end-line="135" selection-end-column="138" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29166666">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc;n#initMap#0" expanded="false" />
                 <marker date="1455836428612" expanded="true" signature="301:314" placeholder="..." />
@@ -99,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6822742">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -143,11 +137,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/puma.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/contact_me.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/freelancer.css.scss" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/maps.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
       </list>
     </option>
   </component>
@@ -944,20 +938,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/classie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,22 +996,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc;n#initMap#0" expanded="false" />
+            <marker date="1455836428612" expanded="true" signature="301:314" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.73077">
+        <state vertical-scroll-proportion="65.15385">
           <caret line="135" column="138" selection-start-line="135" selection-start-column="138" selection-end-line="135" selection-end-column="138" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/maps.js">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29166666">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#initMap#0" expanded="false" />
-            <marker date="1455836428612" expanded="true" signature="301:314" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.6822742">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

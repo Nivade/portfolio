@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails portfolio: development" uuid="b41c5a8f-8819-41c2-8ff8-924c7053aaa3">
+      <user-name>root</user-name>
+      <schema-pattern>portfolio_development.*</schema-pattern>
+      <default-schemas>portfolio_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails portfolio: test" uuid="72e22b97-b90e-4476-aeed-9b132ae17f03">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails portfolio: production" uuid="c5769222-54d1-4c88-bfbf-f60f648949be">
+      <secret-storage>master_key</secret-storage>
+      <user-name>portfolio</user-name>
+      <schema-pattern>portfolio_production.*</schema-pattern>
+      <default-schemas>portfolio_production.*</default-schemas>
+    </data-source>
+  </component>
+</project>

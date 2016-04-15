@@ -31,6 +31,8 @@ gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails-dev-tweaks', '~> 1.1'
 
+gem 'pg', '~> 0.18.4'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

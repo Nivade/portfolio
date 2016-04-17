@@ -389,18 +389,15 @@ footer {
   width: 50px;
   height: 50px;
   z-index: 1049;
-}
 
-.scroll-top .btn {
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  line-height: 28px;
-}
-
-.scroll-top .btn:focus {
-  outline: none;
+  .btn {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 28px;
+    &:focus { outline: none;}
+  }
 }
 
 .portfolio-modal .modal-content {
@@ -430,6 +427,8 @@ footer {
   }
 }
 
+
+
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
@@ -442,25 +441,30 @@ footer {
   &:hover {
     opacity: 0.3;
   }
-
+  .modal-close-arrow {
+      height: 75px;
+      width: 1px;
+      margin-left: 35px;
+      background-color: #2c3e50;
+  }
   .lr {
-    height: 75px;
-    width: 1px;
-    margin-left: 35px;
-    background-color: #2c3e50;
+    @extend .modal-close-arrow;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     z-index: 1051;
+  }
 
-    .rl {
-      transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      z-index: 1052;
-    }
+  .rl {
+    @extend .modal-close-arrow;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052;
   }
 }
+
+
 
 .portfolio-modal .modal-backdrop {
   opacity: 0;

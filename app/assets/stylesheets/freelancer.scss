@@ -27,6 +27,12 @@ $navbar-dropdown-button-bars-c: #000;
   transition: $background $time $method;
 }
 
+@mixin set_transform($transformation) {
+  transform: $transformation;
+  -ms-transform: $transformation;
+  -webkit-transform: $transformation;
+}
+
 html {
   @include wh(100%);
 }
@@ -400,7 +406,16 @@ footer {
   }
 }
 
-.portfolio-modal .modal-content {
+
+
+
+
+.portfolio-modal .modal .fade {
+}
+
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -410,7 +425,44 @@ footer {
   padding: 100px 0;
   text-align: center;
 
-  .h2 {
+  .container {
+    .row {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    .modal-close-arrow {
+        height: 75px;
+        width: 1px;
+        background-color: #2c3e50;
+    }
+    .lr {
+      @extend .modal-close-arrow;
+      @include set_transform(rotate(45deg));
+      z-index: 1051;
+      margin-left: 35px;
+      .rl {
+        @extend .modal-close-arrow;
+        @include set_transform(rotate(90deg));
+        z-index: 1052;
+      }
+    }
+  }
+
+  h2 {
     margin: 0;
     font-size: 3em;
     color: black;
@@ -428,45 +480,7 @@ footer {
 }
 
 
-
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.3;
-  }
-  .modal-close-arrow {
-      height: 75px;
-      width: 1px;
-      margin-left: 35px;
-      background-color: #2c3e50;
-  }
-  .lr {
-    @extend .modal-close-arrow;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    z-index: 1051;
-  }
-
-  .rl {
-    @extend .modal-close-arrow;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    z-index: 1052;
-  }
-}
-
-
-
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+.modal-backdrop {
+  opacity: 0.5;
+  background-color: black !important;
 }

@@ -4,10 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-$navbar-color: #242121;
-
-$navbar-dropdown-button: #706767;
-$navbar-dropdown-button-bars: #000;
+$navbar-c: #242121;
+$navbar-border-c: rgba(255, 255, 255, 0.3);
+$navbar-dropdown-button-c: #706767;
+$navbar-dropdown-button-bars-c: #000;
 
 @mixin wh($percentage) {
   width: $percentage;
@@ -123,60 +123,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Dropdown button
-.navbar .navbar-header .navbar-toggle {
-  background: $navbar-dropdown-button;
-  // Dropdown button bars.
-  .icon-bar {
-    background: $navbar-dropdown-button-bars;
-  }
-}
 
-
-
-.navbar-custom {
+.navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid $navbar-border-c;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: $navbar-color;
+  background-color: $navbar-c;
 
-  .navbar-brand {
-    &:focus {
-      font-weight: 700;
-      outline: none;
-    }
-
+  .navbar-header {
+    // Dropdown button
     .navbar-toggle {
-      padding: 4px 6px;
-      font-size: 16px;
-      color: #000;
-
-      &:focus {
-        outline: none;
-      }
-      &:active {
-        outline: none;
-      }
+        background: $navbar-dropdown-button-c;
+        // Dropdown button bars
+        .icon-bar {
+          background: $navbar-dropdown-button-bars-c;
+        }
+    }
+    .page-scroll {
+      @include set_transition(all, .3s, ease-in-out);
     }
   }
-
-  a {
-    color: #fff;
-  }
-
   .nav {
     li {
       &:active {
-        outline: none;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: $navbar-border-c;
       }
 
       a {
+        color: #fff;
         @include set_transition(background, .3s, ease-in-out);
         &:hover, &:focus, .active {
-          outline: none;
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: $navbar-border-c;
         }
       }
     }
@@ -196,11 +174,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: $navbar-color;
+    background-color: $navbar-c;
   }
 
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid $navbar-border-c;
   }
 }
 

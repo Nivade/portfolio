@@ -6,7 +6,6 @@ gem 'rails', '>= 5.0.0.beta2', '< 5.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
-gem 'puma'
 # Use SCSS for stylesheets
 
 # Use Uglifier as compressor for JavaScript assets
@@ -30,7 +29,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'rails-dev-tweaks', '~> 1.1'
 
 gem 'pg', '~> 0.18.4'
 gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'
@@ -46,6 +44,13 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 3.0'
+  gem 'rails-dev-tweaks', '~> 1.1'
+  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
+  gem 'wdm', '>= 0.0.3'
+end
+
+group :production do
+  gem 'puma'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -56,26 +56,31 @@
 </header>
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio">
-    <div class="container">
+<section id="portfolio" ng-app="app">
+    <div class="container" ng-controller="MainController">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Portfolio</h2>
                 <hr>
+                <input type="search" ng-model="search" placeholder="Search...">
+                <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 portfolio-item">
+
+            <div class="col-sm-4 portfolio-item" ng-repeat="item in items | filter:filterBySearch">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
+                            {{ item.title }}
                             <%= fa_icon 'search-plus 3x' %>
                         </div>
                     </div>
-                    <%= image_tag 'placeholder.jpg', :class => 'img-responsive' %>
-                    <!-- <img src="#" class="img-responsive" alt=""> -->
+                    <img src="/assets/{{item.image}}" class="img-responsive">
                 </a>
+                <p>{{ item.title }}</p>
             </div>
+            <!--
             <div class="col-sm-4 portfolio-item">
                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
@@ -126,6 +131,7 @@
                     <%= image_tag 'placeholder.jpg', :class => 'img-responsive' %>
                 </a>
             </div>
+            -->
         </div>
     </div>
 </section>

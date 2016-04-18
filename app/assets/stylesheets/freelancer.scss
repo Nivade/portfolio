@@ -221,6 +221,8 @@ section {
       outline: none;
     }
   }
+
+
 }
 
 @media (max-width: 767px) {
@@ -233,8 +235,8 @@ section {
 }
 
 #portfolio {
-  h2 {
-    color: #363131
+  h2, p {
+    color: #363131 !important;
   }
   .portfolio-item {
     margin: 0 0 15px;
@@ -271,6 +273,11 @@ section {
         margin: 0;
       }
     }
+  }
+  input {
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
   }
 
   * {

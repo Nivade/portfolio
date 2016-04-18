@@ -11,3 +11,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w(*.js, *.css, *.scss, *.css.erb, *.css.scss, *.png, *.jpg)
 Rails.application.config.assets.precompile += %w(maps.js)
+Rails.application.config.assets.precompile += %w(search_portfolio.js)

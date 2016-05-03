@@ -2,13 +2,28 @@ var app = angular.module('app', []);
 
 app.controller('MainController', function($scope) {
   $scope.items = [{
-      title: "Cake",
+      title: "Karell",
       image: "placeholder.jpg"
     }, {
-      title: "Cabin",
+      title: "Hasdfasdfasdfee",
       image: "placeholder.jpg"
     }, {
-      title: "Party",
+      title: "Piet",
+      image: "placeholder.jpg"
+    }, {
+      title: "Willem",
+      image: "placeholder.jpg"
+    }, {
+      title: "Freek",
+      image: "placeholder.jpg"
+    }, {
+      title: "Freddy",
+      image: "placeholder.jpg"
+    }, {
+      title: "Fred",
+      image: "placeholder.jpg"
+    }, {
+      title: "Henri",
       image: "placeholder.jpg"
     },
   ];

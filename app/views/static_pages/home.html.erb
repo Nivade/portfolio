@@ -85,6 +85,61 @@
 </section>
 
 <section id="about">
+  <div ng-app="contact_validation" ng-controller="contact_validation_controller">
+    <div class="container">
+      <form class="form-horizontal" name="contactForm" ng-submit="submitForm()" novalidate>
+        <fieldset>
+          <!-- Form Name -->
+          <legend>Shoot me a message!</legend>
+
+          <!-- Name -->
+          <div class="form-group" ng-class="{'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine}">
+            <label class="col-md-4 control-label" for="name">Name</label>
+            <div class="col-md-4">
+              <input id="name" ng-model="name" name="name" type="text" placeholder="Ken Masters" class="form-control input-md" required>
+              <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">
+                Your name is required.
+              </p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="contact-email">Email</label>
+            <div class="col-md-4">
+              <input id="contact-email" name="contact-email" type="email" placeholder="ken@masters.srk" class="form-control input-md" required>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="contact-subject">Email</label>
+            <div class="col-md-4">
+              <input id="contact-subject" name="contact-subject" type="text" placeholder="How do I shoryuken?" class="form-control input-md" required>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="contact-message">Message</label>
+            <div class="col-md-4">
+              <textarea rows="4" class="form-control" id="contact-message" name="contact-message" placeholder="..."></textarea>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+            <div class="col-md-4">
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Google maps window. -->
   <div id="map" class="container-fluid map"> </div>
   <%= javascript_include_tag 'maps'%>
   <script src="https://maps.googleapis.com/maps/api/js?key=<%= @google_api_key %>&callback=initMap" async defer></script>

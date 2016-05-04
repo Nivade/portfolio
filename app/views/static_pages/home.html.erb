@@ -91,8 +91,8 @@
 
         <!-- Name -->
         <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
-          <label class="col-md-4 control-label">Name</label>
-          <div class="col-md-4">
+          <label class="col-md-3 control-label">Name</label>
+          <div class="col-md-3">
             <input class="form-control input-md" type="text" name="name" placeholder="Ken Masters" required ng-model="contact.name" >
             <span ng-show="contactForm.name.$dirty && contactForm.name.$invalid">
             <span ng-show="contactForm.name.$error.required" class="control-label">Name is required.</span>
@@ -102,8 +102,8 @@
 
         <!-- Email -->
         <div class="form-group"  ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
-          <label class="col-md-4 control-label" for="email">Email</label>
-          <div class="col-md-4">
+          <label class="col-md-3 control-label" for="email">Email</label>
+          <div class="col-md-3">
             <input type="email" name="email" placeholder="ken@masters.srk" class="form-control input-md" ng-model="contact.email" required>
             <span ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
             <span ng-show="contactForm.email.$error.required" class="control-label">Email is required.</span>
@@ -114,8 +114,8 @@
 
         <!-- Subject -->
         <div class="form-group" ng-class="{ 'has-error' : contactForm.subject.$invalid && !contactForm.subject.$pristine }">
-          <label class="col-md-4 control-label" for="subject">Subject</label>
-          <div class="col-md-4">
+          <label class="col-md-3 control-label" for="subject">Subject</label>
+          <div class="col-md-3">
             <input name="subject" type="text" placeholder="How do I shoryuken?" class="form-control input-md" ng-model="contact.subject" ng-maxlength="50" required>
             <span ng-show="contactForm.subject.$dirty && contactForm.subject.$invalid">
             <span ng-show="contactForm.subject.$error.required" class="control-label">Subject is required.</span>
@@ -126,8 +126,8 @@
 
         <!-- Message -->
         <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$invalid && !contactForm.message.$pristine }">
-          <label class="col-md-4 control-label" for="message">Message</label>
-          <div class="col-md-4">
+          <label class="col-md-3 control-label" for="message">Message</label>
+          <div class="col-md-3">
             <textarea rows="4" class="form-control" name="message" placeholder="..." ng-model="contact.message" required></textarea>
             <span ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
             <span ng-show="contactForm.message.$error.required" class="control-label">Message is required.</span>
@@ -137,12 +137,14 @@
 
         <!-- Button -->
         <div class="form-group">
-          <div class="col-md-4">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
             <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Send</button>
           </div>
         </div>
 
     </form>
+    <
   </div>
 
 

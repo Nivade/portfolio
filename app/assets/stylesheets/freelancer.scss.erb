@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ @import "mixins.scss";
+
 $navbar-c: #242121;
 $navbar-border-c: rgba(255, 255, 255, 0.3);
 $navbar-dropdown-button-c: #706767;
@@ -306,14 +308,17 @@ form {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     background-color: $navbar-c;
     color: white;
-    -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
     border: none !important;
+    @include border_radius(0);
 
     &:hover {
       background-color: black !important;
     }
+
+
+  }
+  .form-control {
+    @include border_radius(0);
   }
 }
 

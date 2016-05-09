@@ -11,29 +11,7 @@ $navbar-border-c: rgba(255, 255, 255, 0.3);
 $navbar-dropdown-button-c: #706767;
 $navbar-dropdown-button-bars-c: #000;
 
-@mixin wh($percentage) {
-  width: $percentage;
-  height: $percentage;
-}
 
-@mixin background_cover() {
-  -webkit-background-size:  cover;
-  -moz-background-size:     cover;
-  background-size:          cover;
-  -o-background-size:       cover;
-}
-
-@mixin set_transition($background, $time, $method) {
-  -webkit-transition: $background $time $method;
-  -moz-transition: $background $time $method;
-  transition: $background $time $method;
-}
-
-@mixin set_transform($transformation) {
-  transform: $transformation;
-  -ms-transform: $transformation;
-  -webkit-transform: $transformation;
-}
 
 html {
   @include wh(100%);

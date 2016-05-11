@@ -1,0 +1,30 @@
+
+.wh(@percentage) {
+  width: @percentage;
+  height: @percentage;
+}
+
+.background-size(@mode) {
+  -webkit-background-size:  @mode;
+  -moz-background-size:     @mode;
+  background-size:          @mode;
+  -o-background-size:       @mode;
+}
+
+.transition(@property, @time, @method) {
+  -webkit-transition: @property @time @method;
+  -moz-transition: @property @time @method;
+  transition: @property @time @method;
+}
+
+.transform(@transformation) {
+  transform: @transformation;
+  -ms-transform: @transformation;
+  -webkit-transform: @transformation;
+}
+
+.border_radius(@radius) {
+  -webkit-border-radius: @radius !important;
+   -moz-border-radius: @radius !important;
+        border-radius: @radius !important;
+}

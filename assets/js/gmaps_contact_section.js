@@ -51,7 +51,7 @@ $( function() {
     var key = 'AIzaSyCEPrMVIC7ijw2NVGIj7Ar7SCZ-136CLQ4';
     var url = "https://maps.googleapis.com/maps/api/js?key=" + key + "&callback=initalize";
     $.ajax({
-        url: "http://maps.googleapis.com/maps/api/js",
+        url: "https://maps.googleapis.com/maps/api/js",
         data: {"key" : key, "callback" : "initialize"},
         type: "GET",
         crossDomain: true,

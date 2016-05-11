@@ -7,12 +7,6 @@
  @import "mixins";
  @import "variables";
 
-@navbar-c: #242121;
-@navbar-border-c: rgba(255, 255, 255, 0.3);
-@navbar-dropdown-button-c: #706767;
-@navbar-dropdown-button-bars-c: #000;
-
-
 
 html {
   .wh(100%);
@@ -113,18 +107,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid @navbar-border-c;
+  border-bottom: 1px solid @color-primary-lighter;
   text-transform: uppercase;
   font-family: @font-family-primary;
-  background-color: @navbar-c;
+  background-color: @color-primary-base;
 
   .navbar-header {
     // Dropdown button
     .navbar-toggle {
-        background: @navbar-dropdown-button-c;
+        background: @color-primary-light;
         // Dropdown button bars
         .icon-bar {
-          background: @navbar-dropdown-button-bars-c;
+          background: #000;
         }
     }
     .page-scroll {
@@ -134,14 +128,14 @@ h1, h2, h3, h4, h5, h6 {
   .nav {
     li {
       &:active {
-        background-color: @navbar-border-c;
+        background-color: @color-primary-lighter;
       }
 
       a {
         color: #fff;
         .transition(background, .3s, ease-in-out);
         &:hover, &:focus, .active {
-          background-color: @navbar-border-c;
+          background-color: @color-primary-lighter;
         }
       }
     }
@@ -161,11 +155,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: @navbar-c;
+    background-color: @color-primary-base;
   }
 
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid @navbar-border-c;
+    border-bottom: 1px solid @color-primary-lighter;
   }
 }
 
@@ -278,14 +272,14 @@ form {
   }
 
   label {
-    color: @navbar-c;
+    color: @color-primary-base;
   }
 }
 
 .form-group {
   button {
     font-family: @font-family-primary !important;
-    background-color: @navbar-c;
+    background-color: @color-primary-base;
     color: white;
     border: none !important;
     .border_radius(0);
@@ -466,6 +460,7 @@ footer {
         width: 1px;
         background-color: #2c3e50;
     }
+
     .lr:extend(.modal-content .modal-close-arrow) {
       .transform(rotate(45deg));
       z-index: 1051;

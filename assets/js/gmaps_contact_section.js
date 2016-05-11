@@ -52,7 +52,7 @@ $( function() {
     var url = "https://maps.googleapis.com/maps/api/js?key=" + key + "&callback=initalize";
     $.ajax({
         url: "https://maps.googleapis.com/maps/api/js",
-        data: {"key" : key, "callback" : "initialize"},
+        data: {"key" : key},
         type: "GET",
         crossDomain: true,
         dataType: 'jsonp',

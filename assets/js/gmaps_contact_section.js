@@ -55,6 +55,7 @@ $( function() {
         data: {"key" : key, "callback" : "initialize"},
         type: "GET",
         crossDomain: true,
-        dataType: 'jsonp'
+        dataType: 'jsonp',
+        success : initialize
     });
 });

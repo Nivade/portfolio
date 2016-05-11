@@ -1,0 +1,30 @@
+
+@mixin wh($percentage) {
+  width: $percentage;
+  height: $percentage;
+}
+
+@mixin background_cover() {
+  -webkit-background-size:  cover;
+  -moz-background-size:     cover;
+  background-size:          cover;
+  -o-background-size:       cover;
+}
+
+@mixin set_transition($background, $time, $method) {
+  -webkit-transition: $background $time $method;
+  -moz-transition: $background $time $method;
+  transition: $background $time $method;
+}
+
+@mixin set_transform($transformation) {
+  transform: $transformation;
+  -ms-transform: $transformation;
+  -webkit-transform: $transformation;
+}
+
+@mixin border_radius($radius) {
+  -webkit-border-radius: $radius !important;
+   -moz-border-radius: $radius !important;
+        border-radius: $radius !important;
+}

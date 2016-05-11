@@ -1,4 +1,10 @@
 
+
+
+.rgba(@color, @opacity : 1){
+  @result: rgba( red(@color), green(@color), blue(@color), @opacity );
+}
+
 .wh(@percentage) {
   width: @percentage;
   height: @percentage;

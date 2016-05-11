@@ -94,6 +94,84 @@
     </div>
   </section>
 
+
+  <section id="contact">
+    <div class="container">
+      <div class="container-fluid">
+        <h1 class="text-center">Contact</h1>
+      </div>
+
+      <form id="contact-form" name="contactForm" novalidate ng-app="form-validation" ng-controller="form-validation-controller" ng-submit="submit_form()" class="form-horizontal">
+
+        <!-- Name -->
+        <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+          <label class="col-md-3 control-label">Name</label>
+          <div class="col-md-3">
+            <input class="form-control input-md" type="text" name="name" placeholder="Ken Masters" required ng-model="contact.name" >
+            <span ng-show="contactForm.name.$dirty && contactForm.name.$invalid">
+            <span ng-show="contactForm.name.$error.required" class="control-label">Name is required.</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group"  ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+          <label class="col-md-3 control-label" for="email">Email</label>
+          <div class="col-md-3">
+            <input type="email" name="email" placeholder="ken@masters.srk" class="form-control input-md" ng-model="contact.email" required>
+            <span ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+            <span ng-show="contactForm.email.$error.required" class="control-label">Email is required.</span>
+            <span class="control-label">Enter a valid email address.</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group" ng-class="{ 'has-error' : contactForm.subject.$invalid && !contactForm.subject.$pristine }">
+          <label class="col-md-3 control-label" for="subject">Subject</label>
+          <div class="col-md-3">
+            <input name="subject" type="text" placeholder="How do I shoryuken?" class="form-control input-md" ng-model="contact.subject" ng-maxlength="50" required>
+            <span ng-show="contactForm.subject.$dirty && contactForm.subject.$invalid">
+            <span ng-show="contactForm.subject.$error.required" class="control-label">Subject is required.</span>
+            <span ng-show="contactForm.subject.$error.maxlength" class="control-label">Subject too long.</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$invalid && !contactForm.message.$pristine }">
+          <label class="col-md-3 control-label" for="message">Message</label>
+          <div class="col-md-3">
+            <textarea rows="4" class="form-control" name="message" placeholder="..." ng-model="contact.message" required></textarea>
+            <span ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
+            <span ng-show="contactForm.message.$error.required" class="control-label">Message is required.</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- Google maps window. -->
+    <div id="map" class="container-fluid map"> </div>
+    <script src="assets/js/gmaps_contact_section.js" async defer></script>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
   <footer class="text-center">
     <div class="footer-above">
       <div class="container">

@@ -3,7 +3,7 @@
  * Generates a google maps widget marking my (current) home.
  */
 
-function initialize() {
+function initMap() {
 
     // Represent the world coördinates of my home.
     var coords_home = {lat: 51.5304890, lng: 5.62725005};
@@ -46,15 +46,3 @@ function initialize() {
         map.setCenter(coords_center);
     });
 }
-
-$( function() {
-    var key = 'AIzaSyCEPrMVIC7ijw2NVGIj7Ar7SCZ-136CLQ4';
-    var url = "https://maps.googleapis.com/maps/api/js?key=" + key + "&callback=initalize";
-    $.ajax({
-        url: "https://maps.googleapis.com/maps/api/js",
-        data: {"key" : key},
-        type: "GET",
-        crossDomain: true,
-        success : initialize
-    });
-});

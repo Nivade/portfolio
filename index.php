@@ -162,7 +162,8 @@
 
     <!-- Google maps window. -->
     <div id="map" class="container-fluid map"> </div>
-    <script src="assets/js/gmaps_contact_section.js" async defer></script>
+    <script src="assets/js/gmaps_contact_section.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCEPrMVIC7ijw2NVGIj7Ar7SCZ-136CLQ4&callback=initMap" async defer></script>
   </section>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

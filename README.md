@@ -1,3 +1,3 @@
 ## README
 
-Portfolio website on rails.
+portfolio design wip
